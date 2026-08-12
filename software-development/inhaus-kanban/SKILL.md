@@ -27,6 +27,19 @@ Loaded by any profile that needs to understand multi-agent routing conventions.
 | compliance | Legal/regulatory risk | deepseek-v4-flash-0731 |
 | content | Long-form/repurposing | qwen3.7-plus |
 | finance | Budget/revenue control | qwen3.7-plus |
+| antigravity | Google Antigravity (agy CLI) operator — drives the agent harness for coding features, refactors, reviews, batch fixes | deepseek-v4-flash-0731 |
+
+## Coding / agent-harness profiles — coordination
+
+The engineering stack is split by interface, not by project:
+
+| Profile | Interface | Route to it when... |
+|---------|-----------|---------------------|
+| `forge` | Direct Hermes code execution | Building web apps, dashboards, Flutter, backend APIs, DB schemas in-session |
+| `weaver` | Direct Hermes code execution | Inhaus Brain / BrainWeave / PicoClaw / SkillWeave and related Flutter apps |
+| `antigravity` | Google Antigravity CLI (`agy`) | A task needs Antigravity's agent harness (its `--print`/`--sandbox`/`--dangerously-skip-permissions` modes) — features, refactors, reviews, batch fixes. Operates in a git repo only. |
+
+All three code in git repos, verify diffs/tests before reporting done, and never commit/push/merge without sign-off. They read the same kanban board; use `--assignee` to pick the interface for the task.
 
 ## Routing Rules
 
