@@ -2,7 +2,7 @@
 name: higgsfield
 version: 0.1.0
 description: |
-  Generate images/videos/3D assets/audio via the Higgsfield CLI (higgsfield.ai).
+  Generate images, videos, 3D models, and audio via the Higgsfield CLI (higgsfield.ai).
   Defaults: GPT Image 2 for image/design/text, Seedance 2.0 for video, Nano
   Banana 2/Lite/Pro for character/reference images, Marketing Studio for ads,
   Seed Audio 1.0 for audio. Use when: "generate an image", "make a video",
